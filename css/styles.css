@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    background-color: rgb(232, 232, 232);
+}
+header{
+    padding: 1em;
+    margin: 0;
+    display: block;
+}
+header img{
+    width: 100px;
+}
+
+button{
+    border-radius: 15px;
+    height: 3em;
+    width: 45%;
+    margin: 1em;
+    border: 1px solid #0A3871;
+    border-width: 1px;
+    border-style:double;
+    font-weight: 400;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+.encriptar{
+    background-color: #0A3871;
+    color: white;
+}
+.encriptar:hover{
+    background-color: #8cbdf8;
+    border-color: #8cbdf8;
+    color: #0A3871;
+    font-size:medium;
+    font-weight: 800;
+    box-shadow: 0 0 5px #8cbdf8,
+                0 0 25px #8cbdf8,
+                0 0 50px #8cbdf8,
+                0 0 100px #8cbdf8;
+    transition: 500ms;
+}
+.desencriptar:hover,.copiar:hover{
+    background-color: #0A3871;
+    box-shadow: 0 0 5px #4576b1,
+                0 0 25px #4576b1,
+                0 0 50px #4576b1,
+                0 0 100px #4576b1;
+    color: white;
+    font-size:medium;
+    font-weight: 800;
+    transition: 500ms;
+}
+.desencriptar{
+    background-color: #D8DFE8;
+}
+.cajaBotones{
+    text-align: left;
+    display: block;
+}
+.cajaBotones div{
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    margin-top: 0.5em;
+    height: 600px;
+    width: auto;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.inText{
+    padding: 2em;
+    padding-bottom: 0;
+    height: 100%;
+    margin-left: 5%;
+
+}
+.inText textarea{
+    background-color: rgb(232, 232, 232);
+    color:#0A3871;
+    font-size:xx-large;
+    width: 90%;
+    height: 67%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.inText textarea::placeholder{
+    color:#0A3871;
+    font-size:xx-large;
+
+}
+.outText{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 1em;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.outText img{
+    width:75%;
+    margin-top: 8.5em;
+}
+.copiar{
+    display:none;
+    width: 90%;
+}
+
+@media screen and (max-width:768px){
+
+    .outText img{
+        display: none;
+    }
+    section{
+        display: block;
+        height: auto;
+    }
+    .outText{
+        height: auto;
+        margin:2em auto 2em auto;
+        width: 80%;
+        
+    }
+    .inText{
+        margin-left: 0;
+    }
+    .inText textarea{
+        height: 12em;
+    }
+    .cajaBotones div{
+        margin:0 auto;
+    }
+    .cajaBotones div button{
+        margin:1em auto;
+        display: block;
+    }
+}
+@media screen and (max-width:480px){
+
+    .cajaBotones div{
+        margin:0 auto;
+        display: block;
+    }
+    button{
+        width: 90%;
+    }
+}
+
+
